@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Extensions.DependencyInjection
+﻿namespace BlazorTest.Data
 {
     internal static class MvcServiceCollectionExtensions
     {
