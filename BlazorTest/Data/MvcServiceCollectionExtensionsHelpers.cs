@@ -6,9 +6,13 @@
         public static AddCloud AddCloudMate(this IServiceCollection services)
         {
             //code here
-
+            ModifyTitle();
 
             return null;
+        }
+        public static void ModifyTitle()
+        {
+
         }
     }
 }

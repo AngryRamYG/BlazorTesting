@@ -1,0 +1,6 @@
+﻿<select class="form-select" aria-label=@ariaLabel>
+        @for (int i = 0; i < value.Count(); i++)
+        {
+        <option value=@(ID+i)>@value[i]</option>
+        }
+</select>
