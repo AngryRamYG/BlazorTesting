@@ -1,0 +1,21 @@
+﻿@page "/popup"
+
+<h1>Popup</h1>
+
+<button type="button"  @onclick="RedirectPage">OPEN POPUP</button>
+
+
+<Popup @ref="popup" />
+
+test
+
+@code{
+    private BlazorComponentTest.Pages.Popup popup;
+
+    private void RedirectPage()
+    {
+        // Shows the popup at the center of the screen
+        popup.Show("Popup body text");
+    }
+
+}

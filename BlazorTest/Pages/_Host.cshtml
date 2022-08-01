@@ -4,3 +4,17 @@
 @{
     Layout = "_Layout";
 }
+
+<component type="typeof(App)" render-mode="ServerPrerendered" />
+
+<script>
+    let counter = 0;
+
+    function test() {
+        let divSelected = document.querySelector(".testdiv");
+
+
+        divSelected.innerHTML = counter;
+        counter++;
+    }
+</script>

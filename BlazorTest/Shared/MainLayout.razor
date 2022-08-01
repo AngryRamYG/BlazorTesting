@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<PageTitle>BlazorTest</PageTitle>
+<PageTitle>TestApp</PageTitle>
 
 <div class="page">
     <div class="sidebar">
@@ -17,16 +17,3 @@
         </article>
     </main>
 </div>
-
-
-<Popup @ref="popupRef" />
-
-@code{
-    private Popup popupRef;
-    
-    private void RedirectPage()
-    {
-        // Shows the popup at the center of the screen
-        popupRef.Show("Popup body text");
-    }
-}

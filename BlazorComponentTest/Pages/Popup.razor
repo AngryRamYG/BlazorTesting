@@ -1,8 +1,7 @@
 ﻿@{
     var showClass = IsVisible ? "d-block" : "d-none";
 }
-
-<div class="toast-container p-3 @showClass" data-bs-autohide="true" data-bs-delay="5000">
+<div class="toast-container p-3 @showClass" data-bs-autohide="true" data-bs-delay="5000" style="position:absolute">
     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
             <strong class="me-auto">@HeaderText</strong>
@@ -28,7 +27,7 @@
     [Parameter]
     public string? BodyText { get; set; }
 
-    public void Show(string bodyText, string headerText = "")
+    public void Show(string bodyText, string headerText = "HEADER CHANGED")
     {
         HeaderText = headerText;
         BodyText = bodyText;
