@@ -8,6 +8,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Content Remove="wwwroot\MethodCall.razor.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="wwwroot\js\script.js" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>
 

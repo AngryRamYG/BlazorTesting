@@ -2,19 +2,4 @@
 
 <h3>CallMethod</h3>
 
-
-
-<button @onclick="onbuttonclick">Button</button>
-
-<p class="testdiv">0</p>
-
-
-@code {
-    [Inject]
-    public IJSRuntime JSRuntime { get; set; }
-
-    public async Task onbuttonclick()
-    {
-        await JSRuntime.InvokeVoidAsync("test");
-    }
-}
+<MethodCall ButtonName="Test" />
